@@ -39,4 +39,7 @@ public class Sandwich implements IPriceable{
         toppings.add(topping);
     }
 
+    public void setToasted(boolean toasted) {
+        this.toasted = toasted;
+    }
 }
