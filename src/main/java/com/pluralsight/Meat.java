@@ -1,7 +1,7 @@
 package com.pluralsight;
 
 public class Meat extends Topping{
-    //Costructor
+    //Constructor
     public Meat(String name) {
         super(name);
     }
