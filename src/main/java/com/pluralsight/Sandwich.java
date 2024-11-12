@@ -35,4 +35,8 @@ public class Sandwich implements IPriceable{
         }
         return price;
     }
+    public void addTopping(Topping topping) {
+        toppings.add(topping);
+    }
+
 }
