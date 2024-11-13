@@ -11,4 +11,8 @@ public class Order {
     public void addSandwich(Sandwich sandwich) {
         sandwiches.add(sandwich);
     }
+
+    public void addDrink(Drink drink) {
+        drinks.add(drink);
+    }
 }
