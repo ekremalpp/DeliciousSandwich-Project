@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    Scanner scanner = new Scanner(System.in);
-    Order currentOrder = new Order(); // The object that will hold the current order
+   public Scanner scanner = new Scanner(System.in);
+   public Order currentOrder = new Order(); // The object that will hold the current order
 
     //Main Menu: Receives main menu selection from the user
     public void displayMainMenu() {
@@ -43,6 +43,26 @@ public class UserInterface {
             System.out.println("0) Cancel Order");
 
             int selection = getUserSelection();
+
+            switch (selection) {
+                case 1:
+                    addSandwich();
+                    break;
+                case 2:
+                    addDrink();
+                    break;
+                case 3:
+                    addChips();
+                    break;
+                case 4:
+                    checkout();
+                    return;
+                case 0:
+                    cancelOrder();
+                    return;  
+                default:
+                    System.out.println("Invalid selection. Please try again.");
+            }
 
 
         }
@@ -218,7 +238,7 @@ public class UserInterface {
 
     public void cancelOrder() {
         System.out.println("Order has been cancelled.");
-        currentOrder = new Order(); 
+        currentOrder = new Order();
     }
 
         }

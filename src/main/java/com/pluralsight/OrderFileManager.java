@@ -14,13 +14,13 @@ public class OrderFileManager {
         String fileName = getReceiptFileName();
 
         //We determine the file path
-        File receptsFolder = new File("receipts");
+        File receiptsFolder = new File("receipts");
 
-        if(!receptsFolder.exists()) {
-            receptsFolder.mkdirs(); // It will create receipts folder
+        if(!receiptsFolder.exists()) {
+            receiptsFolder.mkdirs(); // It will create receipts folder
 
             //Create the file object
-            File receiptFile = new File(receptsFolder, fileName);
+            File receiptFile = new File(receiptsFolder, fileName);
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(receiptFile))) {
                 //write order's information

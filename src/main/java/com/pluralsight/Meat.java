@@ -11,19 +11,19 @@ public class Meat extends Topping{
 
         switch (size) {
             case 4:
-                price = 1.00;  // 4" için fiyat
+                price = 1.00;
                 break;
             case 8:
-                price = 2.00;  // 8" için fiyat
+                price = 2.00;
                 break;
             case 12:
-                price = 3.00;  // 12" için fiyat
+                price = 3.00;
                 break;
         }
         return price;
     }
     @Override
     public String toString() {
-        return "Meat: " + getName();  // Topping ismini basitçe ekliyoruz
+        return "Meat: " + getName();
     }
 }
