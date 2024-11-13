@@ -8,4 +8,22 @@ public class Drink implements IPriceable{
         this.size = size;
         this.flavor = flavor;
     }
+
+    @Override
+    public double calculatePrice() {
+        double price = 0.0;
+
+        switch (size.toLowerCase()) {
+            case "small":
+                price = 2.00;
+                break;
+            case "medium":
+                price = 2.50;
+                break;
+            case "large":
+                price = 3.00;
+                break;
+        }
+        return price;
+    }
 }
