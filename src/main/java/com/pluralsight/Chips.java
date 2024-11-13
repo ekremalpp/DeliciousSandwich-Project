@@ -7,4 +7,9 @@ public class Chips implements IPriceable{
         this.type = type;
     }
 
+    @Override
+    public double calculatePrice() {
+        return 1.50; //Fix price
+    }
+
 }
