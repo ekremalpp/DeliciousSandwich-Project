@@ -45,6 +45,14 @@ public class UserInterface {
             int selection = getUserSelection();
 
 
+
+        }
+    }
+    private int getUserSelection() {
+        try {
+            return Integer.parseInt(scanner.nextLine()); //We get selection from the user
+        } catch (NumberFormatException e) {
+            return -1;
         }
     }
 }
