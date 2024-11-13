@@ -2,8 +2,19 @@
 DeliciousSandwich
 
 ## Description of the Project
+Deli-cious Sandwich Ordering System is a user-interactive application that supports the creation
+of orders for customized sandwiches by the user themselves. The system will guide in choosing 
+the kind of bread, size of the bread, toppings, sauces the user would want in his sandwich,
+and if he wants it toasted or not. Users can prepare their orders, see an overview of their choices,
+and calculate the total price of their meal
 
-
+The system is designed for users to:
+1) Create New Orders
+2) Customize Sandwiches(meats,cheeses,regular topping..)
+3) Add Extras (drinks and chips)
+4) Calculate Prices
+5) Order Confirmation and Receipt Generation
+6) Cancel orders
 
 
 
