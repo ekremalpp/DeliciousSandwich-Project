@@ -88,6 +88,17 @@ public class UserInterface {
 
 
         Sandwich sandwich = new Sandwich(breadType, size);
+
+        System.out.println("Would you like your sandwich toasted? (y/n): ");
+        String toastedResponse = scanner.nextLine();
+
+
+        if (toastedResponse.equalsIgnoreCase("y")) {
+            sandwich.setToasted(true);
+        } else {
+            sandwich.setToasted(false);
+        }
+
         currentOrder.addSandwich(sandwich);
 
         System.out.println("Sandwich added!");

@@ -1,0 +1,11 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Sandwich{breadType='white', size=12, toppings=[Meat: Ham, Topping: Lettuce, Topping: Tomatoes, Topping: Mayo], toasted=Yes}
+Drinks:
+Drink: Fruit Juice (medium)
+Chips:
+Chips: nacho
+Total Price: 15.5
+Total Price: $15.5

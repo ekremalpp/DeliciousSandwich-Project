@@ -49,7 +49,13 @@ public class Sandwich implements IPriceable{
 
     @Override
     public String toString() {
-        return "Sandwich{breadType='" + breadType + "', size=" + size +
-                ", toppings=" + toppings + ", toasted=" + (toasted ? "Yes" : "No") + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Bread: ").append(breadType).append(", Size: ").append(size).append("\"\n");
+        sb.append("Toppings: ");
+        for (Topping topping : toppings) {
+            sb.append(topping.getName()).append(", ");
+        }
+        sb.append("\nToasted: ").append(toasted ? "Yes" : "No");
+        return sb.toString();
     }
 }

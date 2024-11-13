@@ -1,0 +1,14 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Bread: white, Size: 8"
+Toppings: Ham, American, Lettuce, Thousand islands, 
+Toasted: Yes
+Drinks:
+Coca-Cola (small)
+Coca-Cola (large)
+Chips:
+ regular
+Total Price: 17.0
+Total Price: $17.0

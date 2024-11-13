@@ -1,0 +1,14 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+{breadType='white', size=4, toppings=[Meat: Ham, Topping: Lettuce, Topping: Mayo], toasted=Yes}
+{breadType='white', size=4, toppings=[Meat: Ham, Cheese: Provolone, Topping: Lettuce, Topping: Mayo], toasted=Yes}
+Drinks:
+Fanta (small)
+Coca-Cola (small)
+Chips:
+ regular
+ regular
+
+Total Price: $20.75

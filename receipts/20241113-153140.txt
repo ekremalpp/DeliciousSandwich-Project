@@ -1,0 +1,14 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Bread: white, Size: 8"
+Toppings: Steak, 
+Toasted: Yes
+Bread: asd, Size: 4"
+Toppings: 
+Toasted: Yes
+Drinks:
+Chips:
+
+Total Price: $14.5

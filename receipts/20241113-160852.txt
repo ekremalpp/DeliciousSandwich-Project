@@ -1,0 +1,15 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Bread: white, Size: 8"
+Toppings: Steak, American, Onions, Mayo, 
+Toasted: Yes
+Drinks:
+Fanta (small)
+Coca-Cola (small)
+Fruit Juice (small)
+Chips:
+ regular
+
+Total Price: $18.0

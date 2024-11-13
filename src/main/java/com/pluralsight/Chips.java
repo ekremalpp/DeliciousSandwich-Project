@@ -14,7 +14,7 @@ public class Chips implements IPriceable{
 
     @Override
     public String toString() {
-        return "Chips: " + type;
+        return " " + type;
     }
 
 }

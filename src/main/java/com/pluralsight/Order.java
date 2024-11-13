@@ -43,13 +43,27 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "sandwiches=" + sandwiches +
-                ", drinks=" + drinks +
-                ", chips=" + chips +
-                ", totalPrice=" + calculateTotalPrice() +
-                '}';
-    }
+        StringBuilder sb = new StringBuilder();
 
+
+        sb.append("Sandwiches:\n");
+        for (Sandwich sandwich : sandwiches) {
+            sb.append(sandwich.toString()).append("\n");
+        }
+
+
+        sb.append("Drinks:\n");
+        for (Drink drink : drinks) {
+            sb.append(drink.toString()).append("\n");
+        }
+
+
+        sb.append("Chips:\n");
+        for (Chips chip : chips) {
+            sb.append(chip.toString()).append("\n");
+        }
+
+        return sb.toString();
+    }
 
 }

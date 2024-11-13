@@ -1,0 +1,13 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Bread: white, Size: 8"
+Toppings: Steak, American, Lettuce, Thousand islands, 
+Toasted: Yes
+Drinks:
+Fanta (small)
+Chips:
+ regular
+ 14.0
+Total Price: $14.0

@@ -1,0 +1,11 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+{breadType='white', size=4, toppings=[Meat: Ham, Cheese: American, Topping: Lettuce, Topping: Mayo], toasted=Yes}
+Drinks:
+Fanta (small)
+Chips:
+ regular
+ 10.75
+Total Price: $10.75

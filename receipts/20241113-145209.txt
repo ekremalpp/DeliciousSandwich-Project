@@ -1,0 +1,5 @@
+Thank you for your order!
+
+Order Details:
+Order{sandwiches=[Sandwich{breadType='white', size=8, toppings=[Meat: Ham, Cheese: American, Topping: Lettuce, Topping: Peppers, Topping: Mayo, Topping: Mustrad], toasted=Yes}], drinks=[Drink: Fanta (small)], chips=[], totalPrice=12.5}
+Total Price: $12.5
