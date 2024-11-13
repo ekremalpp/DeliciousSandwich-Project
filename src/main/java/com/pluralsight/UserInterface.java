@@ -59,7 +59,7 @@ public class UserInterface {
                     return;
                 case 0:
                     cancelOrder();
-                    return;  
+                    return;
                 default:
                     System.out.println("Invalid selection. Please try again.");
             }

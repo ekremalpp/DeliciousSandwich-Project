@@ -9,37 +9,38 @@ import java.util.Date;
 
 public class OrderFileManager {
 
+
     public void saveReceipt(Order order) {
-        //Creating File Name
+
         String fileName = getReceiptFileName();
 
-        //We determine the file path
+
         File receiptsFolder = new File("receipts");
-
-        if(!receiptsFolder.exists()) {
-            receiptsFolder.mkdirs(); // It will create receipts folder
-
-            //Create the file object
-            File receiptFile = new File(receiptsFolder, fileName);
-
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(receiptFile))) {
-                //write order's information
-
-                writer.write("Thank you for your order!\n\n");
-                writer.write("Order Details:\n");
-                writer.write(order.toString());  // Write details of order
-                writer.write("\nTotal Price: $" + order.calculateTotalPrice() + "\n");
-            } catch (IOException e) {
-                System.out.println("An error occurred while saving the receipt.");
-                e.printStackTrace();
-            }
-            System.out.println("Receipt saved as " + receiptFile.getAbsolutePath()); //Notification that the file has been saved:
-
+        if (!receiptsFolder.exists()) {
+            receiptsFolder.mkdirs();
         }
 
+        File receiptFile = new File(receiptsFolder, fileName);
+
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(receiptFile))) {
+
+            writer.write("Thank you for your order!\n\n");
+            writer.write("Order Details:\n");
+            writer.write(order.toString());
+            writer.write("\nTotal Price: $" + order.calculateTotalPrice() + "\n");
+
+
+            System.out.println("Receipt saved as " + receiptFile.getAbsolutePath());
+
+        } catch (IOException e) {
+            System.out.println("An error occurred while saving the receipt.");
+            e.printStackTrace();
+        }
     }
-    //Date and time format to create the name of the receipt
-    public String getReceiptFileName() {
+
+
+    private String getReceiptFileName() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
         String dateString = sdf.format(new Date());
         return dateString + ".txt";

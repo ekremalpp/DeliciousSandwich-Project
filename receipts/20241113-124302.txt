@@ -1,0 +1,5 @@
+Thank you for your order!
+
+Order Details:
+Order{sandwiches=[Sandwich{breadType='white', size=4, toppings=[Meat: Ham, Topping: Lettuce], toasted=No}], drinks=[], chips=[], totalPrice=6.5}
+Total Price: $6.5
