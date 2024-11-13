@@ -1,0 +1,5 @@
+Thank you for your order!
+
+Order Details:
+Order{sandwiches=[Sandwich{breadType='white', size=8, toppings=[Topping: Mayo, Meat: Steak, Cheese: Provolone, Topping: Lettuce, Topping: Ranch], toasted=No}], drinks=[Drink: Fanta (small)], chips=[Chips: regular], totalPrice=14.0}
+Total Price: $14.0

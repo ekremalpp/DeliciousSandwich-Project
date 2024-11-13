@@ -12,6 +12,6 @@ public class RegularTopping extends Topping {
     }
     @Override
     public String toString() {
-        return "Topping: " + getName();  // Topping ismini basitçe ekliyoruz
+        return "Topping: " + getName();
     }
 }

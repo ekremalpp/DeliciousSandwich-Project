@@ -103,7 +103,7 @@ public class UserInterface {
         if (response.equalsIgnoreCase("y")) {
             // We offer topping options
             while (true) {
-                System.out.println("Choose your topping (1) Meat, (2) Cheese, (3) Regular,  (0) No more toppings:");
+                System.out.println("Choose your topping (1) Meat, (2) Cheese, (3) Regular, (4) Sauce,  (0) No more toppings:");
                 int toppingSelection = getUserSelection();
 
                 if (toppingSelection == 0) {
@@ -164,6 +164,26 @@ public class UserInterface {
                             selectedTopping = new RegularTopping("Mushrooms");
                         }
                         break;
+
+                        case 4:
+                        System.out.println("Choose your sauces (1) Mayo, (2) Mustard, (3), Ketchup, (4) Ranch, (5), Thousand islands, (6) vinaigrette ");
+                        int sauceSelection = getUserSelection();
+                        if (sauceSelection == 1) {
+                            selectedTopping = new RegularTopping("Mayo");
+                        } else if (sauceSelection == 2) {
+                            selectedTopping = new RegularTopping("Mustrad");
+                        } else if (sauceSelection == 3) {
+                            selectedTopping = new RegularTopping("Ketchup");
+                        } else if (sauceSelection == 4) {
+                            selectedTopping = new RegularTopping("Ranch");
+                        } else if (sauceSelection == 5) {
+                            selectedTopping = new RegularTopping("Thousand islands");
+                        } else if (sauceSelection == 6) {
+                            selectedTopping = new RegularTopping("vinaigrette");
+                        }
+
+                        break;
+
                     default:
                         System.out.println("Invalid selection. Please try again.");
                         continue;
