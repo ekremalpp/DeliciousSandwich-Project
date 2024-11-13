@@ -144,12 +144,46 @@ public class UserInterface {
                             selectedTopping = new RegularTopping("Mushrooms");
                         }
                         break;
-
+                    default:
+                        System.out.println("Invalid selection. Please try again.");
+                        continue;
 
                 }
+                if (selectedTopping != null) {
+                    sandwich.addTopping(selectedTopping);
+                    System.out.println(selectedTopping.getName() + " added!");
+                }
             }
+        } else {
+            System.out.println("No toppings added.");
         }
+
+            }
+
+    public void addDrink() {
+        System.out.println("\nAdding a drink...");
+
+
+        System.out.println("Choose your drink flavor:");
+        for (int i = 0; i < Drink.FLAVORS.length; i++) {
+            System.out.println((i + 1) + ") " + Drink.FLAVORS[i]);
+        }
+
+        int flavorSelection = getUserSelection();  // We get the drink selection from the user
+        String selectedFlavor = Drink.FLAVORS[flavorSelection - 1];  // Selected Drink type
+
+        System.out.println("Choose your drink size (small, medium, large): ");
+        String size = scanner.nextLine();
+
+        //Creating a new drink and adding it to the order
+        Drink drink = new Drink(size, selectedFlavor);
+        currentOrder.addDrink(drink);
+
+        System.out.println("Drink added!");
     }
-}
+        }
+
+
+
 
 
