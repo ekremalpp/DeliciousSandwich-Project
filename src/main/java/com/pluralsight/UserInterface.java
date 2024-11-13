@@ -215,6 +215,12 @@ public class UserInterface {
             System.out.println("Order cancelled.");
         }
     }
+
+    public void cancelOrder() {
+        System.out.println("Order has been cancelled.");
+        currentOrder = new Order(); 
+    }
+
         }
 
 
