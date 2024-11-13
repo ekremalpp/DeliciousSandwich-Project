@@ -121,6 +121,29 @@ public class UserInterface {
                             selectedTopping = new Cheese("Swiss");
                         }
                         break;
+                    case 3:
+                        System.out.println("Choose your regular topping (1) Lettuce, (2) Peppers, (3) Onions, (4) Tomatoes, (5) Jalepenos, (6) Cucumbers, (7) Pickles, (8) Guacamole, (9) Mushrooms");
+                        int regularSelection = getUserSelection();
+                        if (regularSelection == 1) {
+                            selectedTopping = new RegularTopping("Lettuce");
+                        } else if (regularSelection == 2) {
+                            selectedTopping = new RegularTopping("Peppers");
+                        } else if (regularSelection == 3) {
+                            selectedTopping = new RegularTopping("Onions");
+                        } else if (regularSelection == 4) {
+                            selectedTopping = new RegularTopping("Tomatoes");
+                        } else if (regularSelection == 5) {
+                            selectedTopping = new RegularTopping("Jalepenos");
+                        } else if (regularSelection == 6) {
+                            selectedTopping = new RegularTopping("Cucumbers");
+                        } else if (regularSelection == 7) {
+                            selectedTopping = new RegularTopping("Pickles");
+                        } else if (regularSelection == 8) {
+                            selectedTopping = new RegularTopping("Guacamole");
+                        } else if (regularSelection == 9) {
+                            selectedTopping = new RegularTopping("Mushrooms");
+                        }
+                        break;
 
 
                 }
