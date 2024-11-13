@@ -22,4 +22,8 @@ public class Cheese extends Topping{
       }
       return price;
     }
+    @Override
+    public String toString() {
+        return "Cheese: " + getName();
+    }
 }

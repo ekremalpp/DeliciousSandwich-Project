@@ -10,4 +10,8 @@ public class RegularTopping extends Topping {
     public double calculateTotalPrice(int size) {
         return 0.0; // Regular Topping's price are fixed
     }
+    @Override
+    public String toString() {
+        return "Topping: " + getName();  // Topping ismini basitçe ekliyoruz
+    }
 }

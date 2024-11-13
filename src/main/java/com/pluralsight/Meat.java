@@ -22,4 +22,8 @@ public class Meat extends Topping{
         }
         return price;
     }
+    @Override
+    public String toString() {
+        return "Meat: " + getName();  // Topping ismini basitçe ekliyoruz
+    }
 }

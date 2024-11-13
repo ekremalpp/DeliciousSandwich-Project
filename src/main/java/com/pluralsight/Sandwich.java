@@ -42,4 +42,10 @@ public class Sandwich implements IPriceable{
     public void setToasted(boolean toasted) {
         this.toasted = toasted;
     }
+
+    @Override
+    public String toString() {
+        return "Sandwich{breadType='" + breadType + "', size=" + size +
+                ", toppings=" + toppings + ", toasted=" + (toasted ? "Yes" : "No") + '}';
+    }
 }
