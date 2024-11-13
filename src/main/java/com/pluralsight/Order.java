@@ -35,4 +35,9 @@ public class Order {
 
         return total;
     }
+
+    public void generateReceipt() {
+        OrderFileManager fileManager = new OrderFileManager();
+        fileManager.saveReceipt(this);  // saving receipt
+    }
 }
