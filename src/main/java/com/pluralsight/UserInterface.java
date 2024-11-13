@@ -83,14 +83,34 @@ public class UserInterface {
         if (response.equalsIgnoreCase("y")) {
             // We offer topping options
             while (true) {
-                System.out.println("Choose your topping (1) Meat, (2) Cheese, (3) Regular, (0) No more toppings:");
+                System.out.println("Choose your topping (1) Meat, (2) Cheese, (3) Regular,  (0) No more toppings:");
                 int toppingSelection = getUserSelection();
 
                 if (toppingSelection == 0) {
                     break;
                 }
+                Topping selectedTopping = null;
+                switch (toppingSelection) {
+                    case 1:
+                        System.out.println("Choose your meat type (1) Steak, (2) Ham, (3) Salami, (4) Roast Beef, (5) Chicken, (6) Bacon");
+                        int meatSelection = getUserSelection();
+                        if (meatSelection == 1) {
+                            selectedTopping = new Meat("Steak");
+                        } else if (meatSelection == 2) {
+                            selectedTopping = new Meat("Ham");
+                        } else if (meatSelection == 3) {
+                            selectedTopping = new Meat("Salami");
+                        } else if (meatSelection == 4) {
+                            selectedTopping = new Meat("Roast Beef");
+                        } else if (meatSelection == 5) {
+                            selectedTopping = new Meat("Chicken");
+                        } else if (meatSelection == 6) {
+                            selectedTopping = new Meat("Bacon");
+                        }
+                        break;
 
 
+                }
             }
         }
     }
