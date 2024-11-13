@@ -15,4 +15,8 @@ public class Order {
     public void addDrink(Drink drink) {
         drinks.add(drink);
     }
+
+    public void addChips(Chips chip) {
+        chips.add(chip);
+    }
 }
