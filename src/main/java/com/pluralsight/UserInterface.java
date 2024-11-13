@@ -48,13 +48,34 @@ public class UserInterface {
 
         }
     }
-    private int getUserSelection() {
+    public int getUserSelection() {
         try {
             return Integer.parseInt(scanner.nextLine()); //We get selection from the user
         } catch (NumberFormatException e) {
             return -1;
         }
     }
+
+    private void addSandwich() {
+        System.out.println("\nAdding a sandwich...");
+
+
+        System.out.println("Choose your bread (white, wheat, rye, wrap): ");
+        String breadType = scanner.nextLine();
+
+        System.out.println("Choose sandwich size (4, 8, 12): ");
+        int size = Integer.parseInt(scanner.nextLine());
+
+
+        Sandwich sandwich = new Sandwich(breadType, size);
+        currentOrder.addSandwich(sandwich);
+
+        System.out.println("Sandwich added!");
+
+        // Topping (Meat, Cheese, Regular)
+        addToppings(sandwich);
+    }
+
 }
 
 

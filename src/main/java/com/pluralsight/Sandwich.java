@@ -7,6 +7,7 @@ public class Sandwich implements IPriceable{
     private String breadType;
     private int size;
     private List<Topping> toppings = new ArrayList<>();
+    private List<Sauce> sauces = new ArrayList<>();
     private boolean toasted;
 
     public Sandwich(String breadType, int size) {
@@ -37,6 +38,9 @@ public class Sandwich implements IPriceable{
     }
     public void addTopping(Topping topping) {
         toppings.add(topping);
+    }
+    public void addSauce(Sauce sauce) {
+        sauces.add(sauce);
     }
 
     public void setToasted(boolean toasted) {
