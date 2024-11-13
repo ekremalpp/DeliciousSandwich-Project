@@ -108,6 +108,19 @@ public class UserInterface {
                             selectedTopping = new Meat("Bacon");
                         }
                         break;
+                    case 2:
+                        System.out.println("Choose your cheese type (1) American, (2) Provolone, (3) Cheddar, (4) Swiss");
+                        int cheeseSelection = getUserSelection();
+                        if (cheeseSelection == 1) {
+                            selectedTopping = new Cheese("American");
+                        } else if (cheeseSelection == 2) {
+                            selectedTopping = new Cheese("Provolone");
+                        } else if (cheeseSelection == 3) {
+                            selectedTopping = new Cheese("Cheddar");
+                        } else if (cheeseSelection == 4) {
+                            selectedTopping = new Cheese("Swiss");
+                        }
+                        break;
 
 
                 }
