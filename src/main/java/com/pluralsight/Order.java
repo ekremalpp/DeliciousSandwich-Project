@@ -19,4 +19,20 @@ public class Order {
     public void addChips(Chips chip) {
         chips.add(chip);
     }
+    public double calculateTotalPrice() {
+        double total = 0.0;
+
+
+         // Adding the prices of sandwiches
+        total += sandwiches.stream().mapToDouble(Sandwich::calculatePrice).sum();
+
+
+        // Adding the prices of Drinks
+        total += drinks.stream().mapToDouble(Drink::calculatePrice).sum();
+
+        //Adding the price of Chips
+        total += chips.stream().mapToDouble(Chips::calculatePrice).sum();
+
+        return total;
+    }
 }
