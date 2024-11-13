@@ -181,6 +181,18 @@ public class UserInterface {
 
         System.out.println("Drink added!");
     }
+
+    public void addChips() {
+        System.out.println("\nAdding chips...");
+        System.out.println("Choose chip type (regular, nacho, bbq): ");
+        String type = scanner.nextLine();
+
+        // // New chip is created and added to the order
+        Chips chips = new Chips(type);
+        currentOrder.addChips(chips);
+
+        System.out.println("Chips added!");
+    }
         }
 
 
