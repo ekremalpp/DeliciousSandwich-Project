@@ -193,6 +193,28 @@ public class UserInterface {
 
         System.out.println("Chips added!");
     }
+
+
+    // Completing the order and calculating the price
+    public void checkout() {
+        System.out.println("\nCheckout:");
+        System.out.println("Order details:");
+        System.out.println(currentOrder);  // It shows order details
+
+
+        System.out.println("Total price: " + currentOrder.calculateTotalPrice());
+
+
+        System.out.println("Do you want to confirm the order? (y/n)");
+
+        String confirmation = scanner.nextLine();
+        if (confirmation.equalsIgnoreCase("y")) {
+            currentOrder.generateReceipt();  //Creating order receipt
+            System.out.println("Thank you for your order! Your receipt has been saved.");
+        } else {
+            System.out.println("Order cancelled.");
+        }
+    }
         }
 
 
