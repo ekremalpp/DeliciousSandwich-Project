@@ -40,4 +40,16 @@ public class Order {
         OrderFileManager fileManager = new OrderFileManager();
         fileManager.saveReceipt(this);  // saving receipt
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "sandwiches=" + sandwiches +
+                ", drinks=" + drinks +
+                ", chips=" + chips +
+                ", totalPrice=" + calculateTotalPrice() +
+                '}';
+    }
+
+
 }
