@@ -38,6 +38,7 @@ public class OrderFileManager {
         }
 
     }
+    //Date and time format to create the name of the receipt
     public String getReceiptFileName() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
         String dateString = sdf.format(new Date());
