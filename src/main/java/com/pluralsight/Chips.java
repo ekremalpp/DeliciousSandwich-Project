@@ -12,4 +12,9 @@ public class Chips implements IPriceable{
         return 1.50; //Fix price
     }
 
+    @Override
+    public String toString() {
+        return "Chips: " + type;
+    }
+
 }
