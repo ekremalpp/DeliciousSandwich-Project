@@ -45,9 +45,9 @@ public class UserInterface {
             int selection = getUserSelection();
 
 
-
         }
     }
+
     public int getUserSelection() {
         try {
             return Integer.parseInt(scanner.nextLine()); //We get selection from the user
@@ -56,7 +56,7 @@ public class UserInterface {
         }
     }
 
-    private void addSandwich() {
+    public void addSandwich() {
         System.out.println("\nAdding a sandwich...");
 
 
@@ -76,6 +76,24 @@ public class UserInterface {
         addToppings(sandwich);
     }
 
+    public void addToppings(Sandwich sandwich) {
+        System.out.println("\nWould you like to add toppings to your sandwich? (y/n)");
+        String response = scanner.nextLine();
+
+        if (response.equalsIgnoreCase("y")) {
+            // We offer topping options
+            while (true) {
+                System.out.println("Choose your topping (1) Meat, (2) Cheese, (3) Regular, (0) No more toppings:");
+                int toppingSelection = getUserSelection();
+
+                if (toppingSelection == 0) {
+                    break;
+                }
+
+
+            }
+        }
+    }
 }
 
 
