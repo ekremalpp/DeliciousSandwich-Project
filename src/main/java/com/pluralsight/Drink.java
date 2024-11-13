@@ -26,4 +26,9 @@ public class Drink implements IPriceable{
         }
         return price;
     }
+    @Override
+    public String toString() {
+        return "Drink: " + flavor + " (" + size + ")";
+    }
+    public static String[] FLAVORS = {"Fanta", "Coca-Cola", "Fruit Juice"};
 }
