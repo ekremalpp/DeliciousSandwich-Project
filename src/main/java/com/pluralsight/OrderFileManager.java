@@ -33,6 +33,14 @@ public class OrderFileManager {
                 System.out.println("An error occurred while saving the receipt.");
                 e.printStackTrace();
             }
+            System.out.println("Receipt saved as " + receiptFile.getAbsolutePath()); //Notification that the file has been saved:
+
         }
+
+    }
+    public String getReceiptFileName() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
+        String dateString = sdf.format(new Date());
+        return dateString + ".txt";
     }
 }
