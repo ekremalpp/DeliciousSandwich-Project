@@ -15,12 +15,26 @@ The system is designed for users to:
 4) Calculate Prices
 5) Order Confirmation and Receipt Generation
 6) Cancel orders
-
-
-
+ 
 ## User Stories
-
-
+List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
+- As a user, I want to create a new order so that I can start customizing and adding items to my order.
+- As a user, I want to add a sandwich to my order so that I can choose my preferred sandwich type.
+- As a user, I want to add toppings to my sandwich so that I can customize it to my liking.
+- As a user, I want to add a drink to my order so that I can complete my meal.
+- As a user, I want to add chips to my order so that I can have a side dish with my meal.
+- As a user, I want to add sauces to my sandwich so that I can enhance the flavor of my sandwich.
+- As a user, I want to know the price of my sandwich based on its size and toppings.
+- As a user, I want to review and confirm my order so that I can proceed to payment.
+- As a user, I want to cancel my order at  before confirming it
+- As a user, I want the option to toast my sandwich so that I can have a toasted sandwich.
+- As a user, I want to be notified if I make an invalid selection while creating my order
+- As a user, I want to be able to add multiple toppings to my sandwich, including meat, cheese, and veggies.
+- As a user, I want to add multiple drinks to my order so that everyone in my group can have their choice of drink.
+- As a user, I want to be able to add multiple sauces for my sandwich to customize it further.
+- As a user, I want to be able to select multiple types of chips for my order.
+- As a user, I want to be able to cancel my order , so I can change my mind if I need to.
+- As a user, I want to confirm my order and finalize it so that I can proceed with payment.
 
 
 
