@@ -76,6 +76,8 @@ Checkout
 ![Checkout.JPG](imgs%2FCheckout.JPG)
 Receipt
 ![Receipt.JPG](imgs%2FReceipt.JPG)
+Bonus Part
+![Challange-yourself.JPG](imgs%2FChallange-yourself.JPG)
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
