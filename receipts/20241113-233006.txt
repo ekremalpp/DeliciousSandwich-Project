@@ -1,0 +1,13 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Bread: white, Size: 8"
+Toppings: Steak, 
+Toasted: Yes
+Drinks:
+Fanta (small)
+Chips:
+ regular
+
+Total Price: $12.5

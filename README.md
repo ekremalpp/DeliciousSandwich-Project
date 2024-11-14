@@ -63,9 +63,20 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Intellij IDEA.
 
 ## Demo
-
-
-
+Order Menu
+![Order Menu.JPG](imgs%2FOrder%20Menu.JPG)
+Add Sandwich
+![addsandwich.JPG](imgs%2Faddsandwich.JPG)
+Add Topping
+![addtopping.JPG](imgs%2Faddtopping.JPG)
+Add Drink
+![addDrink.JPG](imgs%2FaddDrink.JPG)
+Add Chips
+![addChips.JPG](imgs%2FaddChips.JPG)
+Checkout
+![Checkout.JPG](imgs%2FCheckout.JPG)
+Receipt
+![Receipt.JPG](imgs%2FReceipt.JPG)
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
