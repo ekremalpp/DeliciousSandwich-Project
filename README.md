@@ -15,6 +15,9 @@ The system is designed for users to:
 4) Calculate Prices
 5) Order Confirmation and Receipt Generation
 6) Cancel orders
+
+Diagram Of DeliciousSandwich Project
+![DiagramOfSandwich.JPG](imgs%2FDiagramOfSandwich.JPG)
  
 ## User Stories
 List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
