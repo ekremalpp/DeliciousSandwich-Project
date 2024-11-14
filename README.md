@@ -2,7 +2,7 @@
 DeliciousSandwich
 
 ## Description of the Project
-Deli-cious Sandwich Ordering System is a user-interactive application that supports the creation
+DeliciousSandwich Ordering System is a user-interactive application that supports the creation
 of orders for customized sandwiches by the user themselves. The system will guide in choosing 
 the kind of bread, size of the bread, toppings, sauces the user would want in his sandwich,
 and if he wants it toasted or not. Users can prepare their orders, see an overview of their choices,
@@ -39,7 +39,6 @@ List the user stories that guided the development of your application. Format th
 
 
 ## Setup
-
 Instructions on how to set up and run the project using IntelliJ IDEA.
 
 ### Prerequisites
@@ -82,7 +81,7 @@ Receipt
 Outline potential future enhancements or functionalities you might consider adding:
 
 - Additional feature to be developed.
-
+ - In the future, we could add user accounts, allow online payments, and make the app available on mobile phones.
 
 
 ## Resources
