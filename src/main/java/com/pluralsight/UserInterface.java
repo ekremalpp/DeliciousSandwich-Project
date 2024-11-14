@@ -33,32 +33,36 @@ public class UserInterface {
 
         System.out.println("\nCreating a new order...");
 
-        // //Entering the order menu
+         //Entering the order menu
         while (true) {
             System.out.println("\nOrder Menu:");
-            System.out.println("1) Add Sandwich");
-            System.out.println("2) Add Drink");
-            System.out.println("3) Add Chips");
-            System.out.println("4) Checkout");
+            System.out.println("1) Add Signature Sandwich");
+            System.out.println("2) Add Sandwich");
+            System.out.println("3) Add Drink");
+            System.out.println("4) Add Chips");
+            System.out.println("5) Checkout");
             System.out.println("0) Cancel Order");
 
             int selection = getUserSelection();
 
             switch (selection) {
                 case 1:
-                    addSandwich();
+                    addSignatureSandwich();  // Add Signature Sandwich option
                     break;
                 case 2:
-                    addDrink();
+                    addSandwich();  // Add custom sandwich option
                     break;
                 case 3:
-                    addChips();
+                    addDrink();  // Add drink option
                     break;
                 case 4:
-                    checkout();
+                    addChips();  // Add chips option
+                    break;
+                case 5:
+                    checkout();  // Checkout method
                     return;
                 case 0:
-                    cancelOrder();
+                    cancelOrder();  // Cancel order method
                     return;
                 default:
                     System.out.println("Invalid selection. Please try again.");
@@ -67,6 +71,35 @@ public class UserInterface {
 
         }
     }
+    public void addSignatureSandwich() {
+        System.out.println("\nChoose a Signature Sandwich:");
+        System.out.println("1) BLT");
+        System.out.println("2) Philly Cheese Steak");
+        System.out.println("0) Back");
+
+        int selection = getUserSelection();
+
+        Sandwich sandwich = null;
+        switch (selection) {
+            case 1:
+                sandwich = new BLT(8);  // Create the BLT sandwich
+                System.out.println("\n-------------");
+                break;
+            case 2:
+                sandwich = new PhillyCheeseSteak(8);  // Create the Philly Cheese Steak sandwich
+                System.out.println("\n--------");
+                break;
+            case 0:
+                return;  // Go back to the previous menu
+            default:
+                System.out.println("Invalid selection. Please try again.");
+                return;
+        }
+
+        currentOrder.addSandwich(sandwich);
+        System.out.println(sandwich + "\n---Added!---");
+    }
+
 
     public int getUserSelection() {
         try {
@@ -106,6 +139,7 @@ public class UserInterface {
         // Topping (Meat, Cheese, Regular)
         addToppings(sandwich);
     }
+
 
     public void addToppings(Sandwich sandwich) {
         System.out.println("\nWould you like to add toppings to your sandwich? (y/n)");

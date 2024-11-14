@@ -40,7 +40,7 @@ public class OrderFileManager {
     }
 
 
-    private String getReceiptFileName() {
+    public String getReceiptFileName() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
         String dateString = sdf.format(new Date());
         return dateString + ".txt";

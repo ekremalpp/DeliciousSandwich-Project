@@ -1,0 +1,12 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+BLT Sandwich
+Bread: white, Size: 8"
+Toppings: Bacon, Cheddar, Lettuce, Tomato, Ranch, 
+Toasted: Yes
+Drinks:
+Chips:
+
+Total Price: $10.5
