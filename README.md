@@ -85,6 +85,9 @@ Outline potential future enhancements or functionalities you might consider addi
 
 
 ## Resources
+https://yearup.brightspace.com/d2l/home
+https://www.w3schools.com/java/
+https://github.com/RayMaroun
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
 
