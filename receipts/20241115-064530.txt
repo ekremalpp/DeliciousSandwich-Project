@@ -1,0 +1,17 @@
+Thank you for your order!
+
+Order Details:
+Sandwiches:
+Philly Cheese Steak Sandwich
+Bread: white, Size: 8"
+Toppings: Steak, American Cheese, Peppers, Mayo, 
+Toasted: Yes
+Bread: white, Size: 4"
+Toppings: Steak, American, Lettuce, Mayo, 
+Toasted: Yes
+Drinks:
+Fanta (small)
+Chips:
+ regular
+
+Total Price: $21.25
