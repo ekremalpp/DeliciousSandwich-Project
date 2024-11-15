@@ -9,16 +9,21 @@ public class Order {
     private List<Chips> chips = new ArrayList<>();
 
     public void addSandwich(Sandwich sandwich) {
+
         sandwiches.add(sandwich);
     }
 
     public void addDrink(Drink drink) {
+
         drinks.add(drink);
     }
 
     public void addChips(Chips chip) {
+
         chips.add(chip);
     }
+
+
     public double calculateTotalPrice() {
         double total = 0.0;
 

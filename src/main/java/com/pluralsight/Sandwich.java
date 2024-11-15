@@ -37,13 +37,16 @@ public class Sandwich implements IPriceable{
         return price;
     }
     public void addTopping(Topping topping) {
+
         toppings.add(topping);
     }
     public void addSauce(Sauce sauce) {
+
         sauces.add(sauce);
     }
 
     public void setToasted(boolean toasted) {
+
         this.toasted = toasted;
     }
 
